@@ -4,7 +4,7 @@
   "description": "Chat app Using socket.ioi",
   "main": "app.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -13,6 +13,9 @@
   "author": "Hansa Jayathilaka",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
+    "socket.io": "^2.3.0"
   }
 }
