@@ -1,18 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chat App</title>
+    <title>Join | ChatApp</title>
+    <meta name="viewport" content="width=devise-width, inital-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
-<body>
-    <p>Welcome to Chat app.</p>
+<body class="bgcolor">
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="js/index.js" type="text/javascript">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body" style="background-color: floralwhite;">
+                        <form action="chat.html" autocomplete="off">
+                            <div class="form-group">
+                                <h1 style="color: #5f5f5f;">Join Chat</h1>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">User Name</label>
+                                <input id="username" type="text" class="form-control" name="username" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="roomname">Chat Room Name</label>
+                                <input id="roomname" type="text" class="form-control" name="roomname" placeholder="Chat Room Name">
+                            </div>
+                            <br>
+                            <button type="submit" id="join-btn" class="btn btn-primary btn-block" >Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </script>
 </body>
 </html>

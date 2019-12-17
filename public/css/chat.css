@@ -1,0 +1,48 @@
+.scroll {
+    background: aqua;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/*#conversation {*/
+
+/*}*/
+
+#chat-rooms {
+    background-color:#3370b1;
+    height: 100vh;
+}
+
+.form {
+    /*display: flex;*/
+    height: 46px;
+    position: marker;
+    bottom: 0;
+    right: 0;
+}
+
+#msg-txtbox {
+    /*flex: 1;*/
+    width: calc(100% - 208px);
+}
+
+#chat {
+    height: 100vh;
+    background: darkgray
+}
+
+#conservation {
+    height: calc(100vh - 50px);
+    background: darkgray;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+#rooms {
+    list-style-type: none;
+}
+
+h5 {
+    font-weight: bold;
+    margin-block-end: 0.0em;
+}
