@@ -14,9 +14,7 @@ import { MaterialModule } from './material.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  exports: [
+    BrowserAnimationsModule,
     MaterialModule
   ],
   providers: [],
