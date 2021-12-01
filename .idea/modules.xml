@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Chat-App.iml" filepath="$PROJECT_DIR$/.idea/Chat-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Node.Js-Chat-App.iml" filepath="$PROJECT_DIR$/.idea/Node.Js-Chat-App.iml" />
     </modules>
   </component>
 </project>
