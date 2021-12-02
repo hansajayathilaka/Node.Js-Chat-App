@@ -9,15 +9,15 @@
     <form [formGroup]="entranceForm" (ngSubmit)="onSubmit()">
       <mat-form-field [style]="{'width': '100%'}" appearance="fill" class="mb-3">
         <mat-label>User Name</mat-label>
-        <input matInput formControlName="userName" required>
-        <mat-error *ngIf="(entranceFormControl.userName.touched || isSubmitted) && entranceFormControl.userName.errors?.required">
+        <input matInput formControlName="userName">
+        <mat-error *ngIf="isSubmitted && entranceFormControl.userName.errors?.required">
           User Name is required
         </mat-error>
       </mat-form-field>
       <mat-form-field [style]="{'width': '100%'}" appearance="fill">
         <mat-label>Room Name</mat-label>
-        <input matInput formControlName="chatRoom" required>
-        <mat-error *ngIf="(entranceFormControl.chatRoom.touched || isSubmitted) && entranceFormControl.chatRoom.errors?.required">
+        <input matInput formControlName="chatRoom">
+        <mat-error *ngIf="isSubmitted && entranceFormControl.chatRoom.errors?.required">
           Chat Room is required
         </mat-error>
       </mat-form-field>

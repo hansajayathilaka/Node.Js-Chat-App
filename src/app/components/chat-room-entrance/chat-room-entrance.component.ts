@@ -15,8 +15,8 @@ export class ChatRoomEntranceComponent implements OnInit {
 
   ngOnInit(): void {
     this.entranceForm = this.fb.group({
-      userName: ['', Validators.required, Validators.minLength(3)],
-      chatRoom: ['', Validators.required, Validators.minLength(3)]
+      userName: ['', Validators.required],
+      chatRoom: ['', Validators.required]
     });
   }
 
