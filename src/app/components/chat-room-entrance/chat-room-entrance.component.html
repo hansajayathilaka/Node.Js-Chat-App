@@ -1,0 +1,30 @@
+<div [align]="'center'" class="entrance-form entrance-boundary">
+<mat-card class="mat-elevation-z8" cdkDragBoundary=".entrance-boundary" cdkDrag>
+  <mat-card-header [style]="{'justify-content': 'center'}" class="mb-2">
+    <mat-card-title>
+      <h1>Chat Room Entrance</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="entranceForm" (ngSubmit)="onSubmit()">
+      <mat-form-field [style]="{'width': '100%'}" appearance="fill" class="mb-3">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName="userName" required>
+        <mat-error *ngIf="(entranceFormControl.userName.touched || isSubmitted) && entranceFormControl.userName.errors?.required">
+          User Name is required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field [style]="{'width': '100%'}" appearance="fill">
+        <mat-label>Room Name</mat-label>
+        <input matInput formControlName="chatRoom" required>
+        <mat-error *ngIf="(entranceFormControl.chatRoom.touched || isSubmitted) && entranceFormControl.chatRoom.errors?.required">
+          Chat Room is required
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit" class="mt-2">
+        Goto Chat Room
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>
