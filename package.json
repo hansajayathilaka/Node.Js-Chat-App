@@ -14,7 +14,7 @@
   "author": "Hansa Jayathilaka",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.1",
